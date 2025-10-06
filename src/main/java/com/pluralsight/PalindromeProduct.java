@@ -28,9 +28,13 @@ public class PalindromeProduct {
                 // calculate product and store as string
                 String original = String.valueOf(i * j);
 
-                // s
+                // create a stringbuilder with the string
                 StringBuilder sb = new StringBuilder(original);
+
+                // reverse the string and store it
                 String reversed = sb.reverse().toString();
+
+
 
             }
 
