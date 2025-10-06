@@ -19,4 +19,22 @@ public class PalindromeProduct {
         Whether you are successful or unsuccessful, using debugging techniques to view
         your code running step by step!
      */
+
+    public static void main(String[] args) {
+
+        for(int i = 0; i < 1000; i++) {
+
+            for (int j = 0; j < 1000; j++) {
+                // calculate product and store as string
+                String original = String.valueOf(i * j);
+
+                // s
+                StringBuilder sb = new StringBuilder(original);
+                String reversed = sb.reverse().toString();
+
+            }
+
+        }
+
+    }
 }
