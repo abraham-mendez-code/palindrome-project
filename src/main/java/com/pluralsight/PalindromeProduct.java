@@ -22,6 +22,8 @@ public class PalindromeProduct {
 
     public static void main(String[] args) {
 
+        int palindrome = 0;
+
         for(int i = 0; i < 1000; i++) {
 
             for (int j = 0; j < 1000; j++) {
@@ -34,11 +36,19 @@ public class PalindromeProduct {
                 // reverse the string and store it
                 String reversed = sb.reverse().toString();
 
-
+                // check if the original number and reversed number are the same
+                if (original.equals(reversed)) {
+                    // check if the current palindrome is larger than the stored palindrome
+                    if (i*j > palindrome) {
+                        palindrome = i*j;
+                    }
+                }
 
             }
 
         }
+
+        System.out.println(palindrome);
 
     }
 }
